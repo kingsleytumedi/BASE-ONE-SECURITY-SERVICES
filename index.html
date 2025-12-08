@@ -1,176 +1,112 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Base One Security Services</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guardian Security Services</title>
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Your custom styles (update style.css to match brand colors) -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Favicons (optional) -->
-  <link rel="icon" href="images/favicon.png" type="image/png">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background: var(--brand-blue);">
-    <div class="container">
-      <!-- Replace the inline SVG with your logo image if you have one:
-           <img src="images/logo.png" alt="Base One logo" height="40">
-      -->
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <!-- Placeholder SVG logo (replace with images/logo.png if available) -->
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="me-2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-          <rect x="2" y="3" width="20" height="18" rx="2" fill="#d4af37"></rect>
-          <path d="M6 12h12" stroke="#08224b" stroke-width="1.5" stroke-linecap="round"></path>
-          <path d="M6 16h12" stroke="#08224b" stroke-width="1.5" stroke-linecap="round"></path>
-        </svg>
-        <span class="fw-bold">Base One Security</span>
-      </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Guardian Security</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item ms-2 d-none d-lg-block">
-            <!-- Quick contact button in navbar -->
-            <a class="btn btn-gold btn-sm" href="tel:+26770000000">Call +267 70X XXX XXX</a>
-          </li>
         </ul>
       </div>
     </div>
   </nav>
 
+
   <!-- HERO SECTION -->
-  <header class="hero bg-gradient text-white">
-    <div class="container py-5">
-      <div class="row align-items-center">
-        <div class="col-lg-7">
-          <h1 class="display-5 fw-bold">Professional Security Services You Can Trust</h1>
-          <p class="lead mb-4">Licensed guards, CCTV & monitoring, guard dogs and rapid response teams protecting homes, businesses and events across Botswana.</p>
-
-          <!-- CTA buttons -->
-          <div class="d-flex gap-2">
-            <a href="contact.html" class="btn btn-gold btn-lg">Request Security Now</a>
-            <a href="services.html" class="btn btn-outline-light btn-lg">See Our Services</a>
-          </div>
-
-          <!-- Short trust badges -->
-          <div class="mt-4">
-            <small class="me-3"><strong>24/7 Support</strong></small>
-            <small class="me-3"><strong>Licensed Guards</strong></small>
-            <small><strong>Rapid Response</strong></small>
-          </div>
-        </div>
-
-        <div class="col-lg-5 d-none d-lg-block text-end">
-          <!-- Hero image: replace with your own hero-guards.jpg -->
-          <img src="images/hero-guards.jpg" alt="Security guards" class="img-fluid rounded shadow-lg" style="max-height:330px; object-fit:cover;">
-        </div>
-      </div>
+  <header class="hero-section d-flex align-items-center text-white">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold">Professional Security You Can Trust</h1>
+      <p class="lead mb-4">Armed & Unarmed Guards • Patrols • CCTV • VIP Protection • Event Security</p>
+      <a href="contact.html" class="btn btn-primary btn-lg">Request Security Now</a>
     </div>
   </header>
 
-  <!-- SECTION: MAIN SERVICES PREVIEW -->
+
+  <!-- MISSION & SERVICES PREVIEW -->
   <section class="py-5">
     <div class="container">
-      <h2 class="mb-4">Our Main Services</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <img src="images/guards.jpg" class="card-img-top" alt="Guards">
-            <div class="card-body">
-              <h5 class="card-title">Guard Services</h5>
-              <p class="card-text">Uniformed armed and unarmed guards for residential, commercial, and event security.</p>
-              <a href="services.html#guards" class="stretched-link">Learn more</a>
-            </div>
-          </div>
-        </div>
+      <div class="row g-4 align-items-center">
 
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <img src="images/cctv.jpg" class="card-img-top" alt="CCTV">
-            <div class="card-body">
-              <h5 class="card-title">CCTV & Monitoring</h5>
-              <p class="card-text">Installation, maintenance and remote monitoring to keep your site secure 24/7.</p>
-              <a href="services.html#cctv" class="stretched-link">Learn more</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100 border-0 shadow-sm">
-            <img src="images/dog-guard.jpg" class="card-img-top" alt="Guard Dogs">
-            <div class="card-body">
-              <h5 class="card-title">Guard Dog Services</h5>
-              <p class="card-text">Trained guard dogs and handlers for perimeter protection and deterrence.</p>
-              <a href="services.html#dogs" class="stretched-link">Learn more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY CHOOSE US -->
-  <section class="bg-light py-5">
-    <div class="container">
-      <div class="row align-items-center">
         <div class="col-md-6">
-          <h3>Why Choose Base One?</h3>
-          <ul class="list-unstyled">
-            <li>• Professional, licensed and vetted guards</li>
-            <li>• 24/7 monitoring and rapid response teams</li>
-            <li>• Tailored security plans for each client</li>
-          </ul>
-          <a class="btn btn-outline-primary mt-3" href="about.html">Read Our Story</a>
+          <h2 class="fw-bold">Our Mission</h2>
+          <p>Our mission is to protect life, property and assets through professional, reliable and modern security solutions.</p>
         </div>
-        <div class="col-md-6 text-center">
-          <img src="images/why-choose.jpg" alt="Why choose us" class="img-fluid rounded">
+
+        <div class="col-md-6">
+          <h3 class="fw-bold">Core Services</h3>
+
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li>✔ Armed Guards</li>
+                <li>✔ Unarmed Guards</li>
+                <li>✔ Mobile Patrols</li>
+                <li>✔ CCTV Installation</li>
+              </ul>
+            </div>
+
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li>✔ Alarm Systems</li>
+                <li>✔ VIP Protection</li>
+                <li>✔ Event Security</li>
+                <li>✔ Guard Dogs</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- CTA BANNER -->
-  <section class="cta text-white py-4 text-center">
-    <div class="container">
-      <h4 class="mb-2">Need immediate security cover?</h4>
-      <p class="mb-3">Call our operations center now for rapid deployment.</p>
-      <a href="tel:+26770000000" class="btn btn-light btn-lg">Call +267 70X XXX XXX</a>
-    </div>
-  </section>
 
   <!-- FOOTER -->
-  <footer class="py-4 bg-dark text-white">
-    <div class="container text-center">
-      <p class="mb-1">&copy; <span id="yr"></span> Base One Security Services</p>
-      <small>Tel: +267 70X XXX XXX • Email: info@baseone.co.bw</small>
-      <div class="mt-2">
-        <!-- Optional social icons (replace links) -->
-        <a class="text-white me-3" href="#" aria-label="Facebook">FB</a>
-        <a class="text-white me-3" href="#" aria-label="Twitter">TW</a>
-        <a class="text-white" href="#" aria-label="LinkedIn">IN</a>
+  <footer class="bg-dark text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div>
+        <strong>Guardian Security Services</strong><br>
+        Phone: +267 712 34567<br>
+        Email: info@guardian.example
+      </div>
+
+      <div class="text-center mt-3 mt-md-0">
+        <small>© <span id="year"></span> Guardian Security — All rights reserved</small>
       </div>
     </div>
   </footer>
 
-  <!-- Bootstrap JS bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Update copyright year
-    document.getElementById('yr').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
+
