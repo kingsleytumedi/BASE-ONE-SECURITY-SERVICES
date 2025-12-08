@@ -128,3 +128,30 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/* --- ABOUT PAGE --- */
+.about-section img {
+    border-radius: 10px;
+}
+
+.about-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin-bottom: 15px;
+}
+
+.info-box {
+    background: #ffffff;
+    border-left: 5px solid #0d1b2a;
+    transition: 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.why-section h4 {
+    font-weight: 700;
+    color: #0d1b2a;
+}
