@@ -1,0 +1,39 @@
+/* GENERAL RESET */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* NAVBAR */
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* HERO SECTION */
+.hero-section {
+    height: 70vh;
+    background: url('https://images.unsplash.com/photo-1581091870627-3af89e6a4c43?auto=format&fit=crop&w=1400&q=80')
+      center/cover no-repeat;
+    padding: 30px;
+}
+
+/* Make hero darker */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* FOOTER */
+footer {
+    font-size: 0.9rem;
+}
