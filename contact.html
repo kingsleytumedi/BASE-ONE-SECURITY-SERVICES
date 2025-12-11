@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - BASE ONE SECURITY SERVICES</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-</head>
 
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">BASE ONE SECURITY SERVICES</a>
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="https://i.postimg.cc/vm5Z4Pvd/Screenshot-2025-12-11-031913.png" alt="Logo" class="logo-img">
+            <span class="ms-2">BASE ONE SECURITY SERVICES</span>
+        </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,7 +27,7 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                 <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
             </ul>
@@ -30,90 +35,78 @@
     </div>
 </nav>
 
-
-
-<!-- CONTACT HEADER -->
-<div class="page-header mt-5 pt-5">
-    <h1>Contact Us</h1>
-    <p>We are available 24/7 to assist you.</p>
-</div>
-
-
-
 <!-- CONTACT SECTION -->
-<section class="container mt-4 mb-5">
-    <div class="row g-4">
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-bold">Contact Us</h2>
 
-        <!-- CONTACT FORM -->
-        <div class="col-md-6">
-            <div class="contact-box shadow p-4 rounded">
-                <h3 class="mb-3">Send Us a Message</h3>
+        <div class="row g-4">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm">
+                    <h4 class="mb-3">Send Us a Message</h4>
 
-                <form action="#" method="POST">
-                    <div class="mb-3">
-                        <label class="form-label">Full Name</label>
-                        <input type="text" class="form-control" placeholder="Enter your full name" required>
-                    </div>
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your name" required>
+                        </div>
 
-                    <div class="mb-3">
-                        <label class="form-label">Phone Number</label>
-                        <input type="tel" class="form-control" placeholder="Enter your phone number" required>
-                    </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
 
-                    <div class="mb-3">
-                        <label class="form-label">Email Address</label>
-                        <input type="email" class="form-control" placeholder="Enter your email" required>
-                    </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="5" placeholder="Your inquiry..." required></textarea>
+                        </div>
 
-                    <div class="mb-3">
-                        <label class="form-label">Message</label>
-                        <textarea class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
-                    </div>
-
-                    <button class="btn btn-primary w-100">Send Message</button>
-                </form>
-            </div>
-        </div>
-
-        <!-- CONTACT DETAILS -->
-        <div class="col-md-6">
-            <div class="contact-box shadow p-4 rounded">
-                <h3 class="mb-3">Contact Information</h3>
-
-                <p><strong>Phone:</strong> 71456403</p>
-                <p><strong>Email:</strong> baseonesecurityservices@gmail.com</p>
-                <p><strong>Facebook:</strong> baseonesecurityservices</p>
-                <p><strong>Location:</strong> Francistown, Area A, Plot No. 12922, Botswana</p>
+                        <button class="btn btn-dark w-100">Submit</button>
+                    </form>
+                </div>
             </div>
 
-            <!-- MAP -->
-            <div class="map mt-4 rounded overflow-hidden shadow">
-                <iframe 
-                    width="100%" 
-                    height="300" 
-                    style="border:0" 
-                    loading="lazy"
-                    allowfullscreen
-                    referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.002594874512!2d27.49713547589796!3d-21.16861008052596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebddb5a988d9463%3A0xedc51696879aaf00!2sArea%20A%2C%20Francistown%2C%20Botswana!5e0!3m2!1sen!2sbw!4v1707405555555">
-                </iframe>
+            <!-- Contact Info -->
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm">
+                    <h4 class="mb-3">Our Office</h4>
+
+                    <p><strong>📍 Location:</strong><br>
+                        Francistown, Area A<br>
+                        Plot No. 12922<br>
+                        Botswana
+                    </p>
+
+                    <p><strong>📞 Phone:</strong> 71456403</p>
+
+                    <p><strong>📧 Email:</strong> baseonesecurityservices@gmail.com</p>
+
+                    <p><strong>🔵 Facebook:</strong> BASE ONE SECURITY SERVICES</p>
+
+                    <!-- Embedded Google Map -->
+                    <div class="map-container mt-3">
+                        <iframe
+                            src="https://www.google.com/maps?q=Francistown+Area+A+Botswana&output=embed"
+                            width="100%" height="250"
+                            style="border:0;" allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
             </div>
         </div>
 
     </div>
 </section>
 
-
-
 <!-- FOOTER -->
-<footer>
-    <p>© 2025 BASE ONE SECURITY SERVICES</p>
-    <p>Phone: 71456403 | Email: baseonesecurityservices@gmail.com</p>
-    <p>Facebook: baseonesecurityservices</p>
+<footer class="bg-dark text-light text-center py-3 mt-5">
+    <p class="mb-0">© 2025 BASE ONE SECURITY SERVICES | All Rights Reserved</p>
 </footer>
 
-
-
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
