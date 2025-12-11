@@ -1,47 +1,38 @@
-/* GENERAL RESET */
+/* GENERAL STYLES */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
 }
 
-/* NAVBAR */
-.navbar-brand {
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+/* LOGO */
+.logo {
+    width: 90px;
+    height: auto;
+    border-radius: 6px;
 }
 
 /* HERO SECTION */
 .hero-section {
+    background: url("https://images.unsplash.com/photo-1590487984658-9650f1dfb4c3?auto=format&fit=crop&w=1400&q=80")
+    center/cover no-repeat;
     height: 70vh;
-    background: url('https://images.unsplash.com/photo-1581091870627-3af89e6a4c43?auto=format&fit=crop&w=1400&q=80')
-      center/cover no-repeat;
-    padding: 30px;
-    position: relative;
 }
 
-/* Dark overlay */
-.hero-section::before {
-    content: "";
-    position: absolute;
-    top: 0; 
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.55);
+/* SERVICE BOXES */
+.service-box {
+    background: white;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
-.hero-section .container {
-    position: relative;
-    z-index: 2;
+.service-box:hover {
+    transform: translateY(-5px);
 }
 
 /* FOOTER */
-footer {
-    font-size: 0.9rem;
+footer p {
+    margin: 4px 0;
 }
+
 /* --- GENERAL PAGE SPACING --- */
 .page-header {
     margin-top: 100px;
